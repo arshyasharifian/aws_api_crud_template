@@ -1,0 +1,12 @@
+{
+    "name": "lambda-create",
+    "description": "",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "esbuild --bundle --sourcemap --platform=node --target=node14 --external:@sentry/serverless --external:aws-sdk --outdir=build src/handler.ts",
+        "zip": "mkdir -p ../dist && zip -r -j ../dist/${npm_package_name}.zip build",
+        "package": "npm run build && npm run zip"
+    },
+    "main": "handler.ts",
+    "private": true
+}

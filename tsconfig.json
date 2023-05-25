@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "strict": true,
+    "baseUrl": ".",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "esModuleInterop": true,
+    "inlineSourceMap": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@lambda-create/*": [
+        "lambda-create/src/*"
+      ],
+      "@lambda-delete/*": [
+        "lambda-delete/src/*"
+      ],
+      "@lambda-get/*": [
+        "lambda-get/src/*"
+      ],
+      "@lambda-put/*": [
+        "lambda-put/src/*"
+      ]
+    }
+  }
+}
